@@ -1,22 +1,23 @@
 /*
     Color scheme:
     #7f00ae - royal purple
-    #a0ffbd  - light green
+    #a0ffbd   light green
 */
 
-{% load static %}
+
 
 /* Set up background with a background I got from Subtle Patterns, and the font
 ** with a font I got from Google Fonts */
 body {
     font-family: 'Alice', serif;
-    background: url('sand.jpg');
+    background: url('/static/images/sand.jpg');
+
 }
 
 
 /* Here I set up the sidepanel that has the gradient sunset background image.  */
 .sidepanel {
-    background: url('portfolio_details.jpg') ;
+    background: url('/static/images/portfolio_details.jpg');
     min-height: 100vh;
 }
 

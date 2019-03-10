@@ -2,7 +2,7 @@ import requests
 from django.shortcuts import render
 
 
-        
+       # home page
 def index_page(request):
         context = {
         }
@@ -10,33 +10,28 @@ def index_page(request):
         
         
 
-
+        # My Projects page
 def projects_page(request):
-
+        
         context = {
         }
         return render(request, 'projects.html', context)
         
         
-        
+        # About me
 def contact_page(request):
 
         context = {
         }
         return render(request, 'contact.html', context)
 
-def github_page(request):
-
-        context = {
-        }
-        return render(request, 'github.html', context)
 
 
 
-
+    # My github repos
 
 def github_page(request):
-    # We can also combine Django with APIs
+
     response = requests.get('https://api.github.com/users/stevezlin/repos')
     repos = response.json()
     context = {
